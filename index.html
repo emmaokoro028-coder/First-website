@@ -101,8 +101,43 @@
         button:active {
         transform: scale(0.95);
         }        
-        
+        /* PROFESSIONAL NAVBAR */
 
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 18px 20px;
+            margin-bottom: 30px;
+            background: rgba(31, 41, 55, 0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(129, 140, 248, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .navbar a:hover {
+            color: #818cf8;
+            transform: translateY(-2px);
+        }
+
+        .navbar .logo {
+            color: #818cf8;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 20px;
+        }
         /* LIGHT MODE */
 
         body.light {
@@ -140,7 +175,16 @@
 </head>
 
 <body>
+    <nav class="navbar">
 
+         <div class="logo">Emma.dev</div>
+
+         <a href="#home">Home</a>
+         <a href="#about">About</a>
+         <a href="#goals">Goals</a>
+         <a href="#projects">Projects</a>
+
+    </nav>   
     <!-- Dark Mode Button -->
     <button class="theme-button" onclick="toggleTheme()">🌙</button>
 
