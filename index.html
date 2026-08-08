@@ -39,7 +39,22 @@
             margin-bottom: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);   
         }       
-        h1 {
+        /* PAGE ANIMATION */
+        .card {
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+        }
+
+        to {
+        opacity: 1;
+        transform: translateY(0);
+            }
+        }        h1 {
             font-size: 45px;
             color: #818cf8;
         }
